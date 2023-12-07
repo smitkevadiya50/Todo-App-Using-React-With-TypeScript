@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# Todo App Using React with TypeScript
+
+This project is a Todo application built using React with TypeScript. It allows users to manage their tasks efficiently with features like creating, deleting, marking tasks as complete, and editing tasks.
+
+## Features
+
+- **Create Task**: Users can add new tasks to their todo list.
+- **Delete Task**: Allows users to remove tasks from the list.
+- **Complete Task**: Users can mark tasks as completed.
+- **Edit Task**: Provides the functionality to edit the details of existing tasks. However, once a task is marked as complete, it cannot be edited.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -37,11 +48,10 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However, we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-# Todo-App-Using-React-With-TypeScript
