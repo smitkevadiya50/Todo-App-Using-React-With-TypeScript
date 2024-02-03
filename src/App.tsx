@@ -1,24 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import InputeFeild from './components/InputeFeild';
+import Todo from './components/model'
+import TodoList from './components/TodoList'
 
-function App() {
+/* let name: string = "Smit Kevadiya";
+let age:number | string = 23;
+let skills: string[]= [];
+type person = {
+  name:string;
+  age?: number;
+}
+
+let Person: person = {
+   name: 'Smit',
+   age: 22
+}
+
+let lostOfPeople: person[];
+lostOfPeople= [Person];
+
+function prtinNumber(num:number){
+  console.log(num);
+}
+prtinNumber(23);
+
+let printName: (name: string) => never; */
+
+const App: React.FC=()=> {
+  const [todo,setTodo] = useState<string>("");
+  const [todos, setTodos] = useState<Todo[]>([]);
+
+  const onSubmit = (e: React.FormEvent)=> {
+    e.preventDefault();
+
+    if(todo){
+      setTodos([...todos,{id:Date.now(),todo,isCompleted:false}]);
+      setTodo("");
+      console.log(todos);
+    }
+  
+  };
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span className='heading'>Tasks</span>
+      <InputeFeild setTodo={setTodo} todo={todo} onSubmit={onSubmit}/>
+      <TodoList setTodos={setTodos} todos={todos}/>
     </div>
   );
 }

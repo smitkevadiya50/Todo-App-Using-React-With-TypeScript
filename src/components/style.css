@@ -1,0 +1,94 @@
+.input {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.input_box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input_button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    background-color: #2f74c0;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+
+.input_button:hover{
+    background-color: #388ae2;
+}
+.input_button:active{
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+    
+}
+
+.todos_single{
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url('https://trianglenews.co.uk/wp-content/uploads/2018/04/about-sec-bg-2-1.jpg');
+    background-size: cover;
+}
+.todos_single_text{
+    flex: 1;
+    pad: 5px;
+    border: none;
+    font-size: 20px;
+}
+.icon{
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.edit_form{
+    flex: 1;
+    pad: 5px;
+    border: none;
+    font-size: 20ox;
+}
+.edit_input{
+    width: 100%;
+    font-size: 20px;
+    border: 1px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+@media (max-width: 700px){
+    .input{
+        width: 95%;
+    }
+    .todos{
+        width: 95%;
+    }
+    .todos_single{
+        width: 100%;;
+    }
+}
